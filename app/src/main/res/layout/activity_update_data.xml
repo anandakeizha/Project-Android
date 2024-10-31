@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateData"
+    android:background="@color/viridian">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Update Data"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="150dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/updateImage"
+                android:layout_width="41dp"
+                android:layout_height="43dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateNama"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nickname"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/nick">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateNick"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Nickname"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/email">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateEmail"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Addres"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/alamat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateAlamat"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Addres"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Born"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView5"
+        app:layout_constraintStart_toStartOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/date">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateBorn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phone"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView6"
+        app:layout_constraintStart_toStartOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/telp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/updateTelp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="number"
+                android:textColor="@color/text"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Update"
+        android:textColor="@color/viridian"
+        app:layout_constraintStart_toStartOf="@+id/cardView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
